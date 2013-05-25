@@ -1,8 +1,8 @@
 @charset "utf-8";
-/* CSS Document */
+/* CSS Document for Worklow Nilai Mata Kuliah */
 
 body{
-  background:url(img/bd2.jpg) fixed;
+	background:url(img/bd2.jpg) fixed;
 }
 
 #header{
@@ -264,7 +264,13 @@ a:hover {
 #login{
 	width:500px;
 	height:300px;
-	border:2px double #696;
+	border:2px solid #CCCCCC;
+	box-shadow:0 0 15px #cccccc;
+	-o-box-shadow:0 0 15px #cccccc;
+	-ms-box-shadow:0 0 15px #cccccc;
+	-moz-box-shadow:0 0 15px #cccccc;
+	-webkit-box-shadow:0 0 15px #cccccc;
+	-khtml-box-shadow:0 0 15px #cccccc;
 	border-radius:20px;
 	font-size:18px;
 	background:url(img/bdLogin.png);
