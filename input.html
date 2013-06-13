@@ -60,6 +60,7 @@
 	<div id="logo">Workflow<div class="description">Nilai Mata Kuliah</div></div>
 	
 	<aside id="sidebar" class="column">
+
 		<h3>Home</h3>
 		<ul class="toggle">
 			<li class="icn_new_article"><a href="./">Beranda</a></li>
@@ -90,59 +91,55 @@
 	<article class="module width_full">
 		<header><h3>Input Nilai</h3></header>
 			<div class="module_content">
-			<fieldset><b>
-			<table>
-				<tr>
-					<td>Nama</td><td>:</td><td>Ayu Rahayu Efriana</td>
-				</tr>
-				<tr>
-					<td>NIM</td><td>:</td><td>1108107010062</td>
-				</tr>
-				<tr>
-					<td>Jurusan</td><td>:</td><td>FKIP Biologi</td>
-				</tr>
-			</table>
-			</b>
-			<hr/>
-			<table>
-			  <form action="save.html" method="post">
-			    <tr>
-			      <td>Tugas</td><td>:</td>
-			      <td><input type="text" name="tugas" class="input" required></td>
-			      <td><input type="number" name="pertugas" class="input_" required><b>%</b></td>
-			    </tr>
-			    <tr>
-			      <td>Praktikum</td><td>:</td>
-			      <td><input type="text" name="praktikum" class="input" required></td>
-			      <td><input type="number" name="perpraktikum" class="input_" required><b>%</b></td>
-			    </tr>
-			    <tr>
-			      <td>Kuis</td><td>:</td>
-			      <td><input type="text" name="kuis" class="input" required></td>
-			      <td><input type="number" name="perkuis"  required><b>%</b></td>
-			      <td>Grade <input type="text" class="input_" </td>
-			    </tr>
-			    <tr>
-			      <td>UTS</td><td>:</td>
-			      <td><input type="text" name="uts" class="input" required></td>
-			      <td><input type="number" name="peruts" class="input_"><b>%</b></td>
-			    </tr>
-			    <tr>
-			      <td>UAS</td><td>:</td>
-			      <td><input type="text" name="uas" class="input" required></td>
-			      <td><input type="number" name="peruas" class="input_"><b>%</b></td>
-			    </tr>
-			    <tr>
-				  <td></td><td></td>
-				  <td>
-				    <input type="submit" class="submit" value="Simpan">
-				    <input type="reset" class="reset" value="Reset">
-				  </td>
-				</tr>
-			  </form>
-			</table>
-			</fieldset>
-			<!-- End input nilai -->
+
+<!-- Form select input nilai -->						
+<center>
+<div id="inputNilai">
+  <table>
+    <form action="inputNilai.html" method="post">
+      <tr>
+        <td>Jurusan</td><td>:</td>
+        <td>
+          <select name="fakultas" class="input">
+            <option value="-"></option>
+            <optgroup label="FMIPA">
+              <option>Matematika</option>
+              <option>Biologi</option>
+              <option>Kimia</option>
+            </optgroup>
+            <optgroup label="Tehnik">
+              <option>Elektro</option>
+              <option>Sipil</option>
+            </optgroup>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>NIM</td><td>:</td>
+        <td><input type="text" name="nim" class="input" required /></td>
+      </tr>
+      <tr>
+        <td>MK</td><td>:</td>
+        <td>
+          <select name="mk" class="input" required>
+            <option></option>
+            <option>Biologi</option>
+            <option>Kimia</option>
+            <option>B. Inggris</option>
+            <option>B. Indonesia</option>
+            <option>Matematika</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"></td>
+        <td><input type="submit" name="Input" value="Input" class="submit"></td>
+      </tr>
+    </form>
+  </table>
+</div>
+</center><br><br><br>
+<!-- End select input nilai -->
 
 			</div>
 		<footer></footer>
